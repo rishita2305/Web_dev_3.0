@@ -10,6 +10,7 @@ import TeamCard from "./components/TeamCard.jsx";
 import ProtectedRoute from "./hoc/ProtectedRoute.jsx";
 import VerifiedRoute from "./hoc/VerifiedRoute.jsx";
 import AdminRoute from "./hoc/AdminRoute.jsx";
+import TeamPage from "./pages/TeamsPage.jsx";
 import CreateTeamPage from "./pages/CreateTeamPage.jsx";
 import JoinTeamPage from "./pages/JoinTeamPage.jsx";
 import Home from "./pages/Home";
@@ -36,7 +37,7 @@ const App = () => {
           <ScrollToTop />
           <StarsCanvas />
           <UserOptions />
-          <Toaster/>
+          <Toaster />
           <div className="relative z-10">
             <Routes>
               <Route path="/" element={<Home />} />
@@ -45,6 +46,8 @@ const App = () => {
               <Route path="/register" element={<RegisterPage />} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+
+              <Route path="/teamspage" element={<TeamPage />} />
 
               <Route
                 path="/userdashboard"
